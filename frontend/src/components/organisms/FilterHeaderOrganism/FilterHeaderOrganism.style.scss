@@ -1,0 +1,20 @@
+.filter-header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    gap: 10px;
+}
+
+.filter-header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

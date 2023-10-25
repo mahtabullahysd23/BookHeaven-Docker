@@ -1,0 +1,39 @@
+/* Quantity container */
+@import "../../../index.scss";
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quantity input field */
+.quantity-input {
+  height: 25px;
+  width: 40px;
+  text-align: center;
+  border: 1px solid $gray-light-color;
+  border-radius: 4px;
+  margin: 0 8px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+/* Quantity increment and decrement buttons */
+.quantity-button {
+  background-color: $gray-light-color;
+  color: $black-color;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  height: 25px;
+  width: 25px;
+}
+
+/* Quantity button hover state */
+.quantity-button:hover {
+  background-color: $green-color;
+  color: $white-color;
+}

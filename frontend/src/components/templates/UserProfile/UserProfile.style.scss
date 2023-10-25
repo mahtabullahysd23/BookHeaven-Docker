@@ -1,0 +1,38 @@
+.user-profile-container {
+  margin-top: 75px;
+}
+
+.user-profile-content {
+  height: 110vh;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.round-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tow-column-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.button-save{
+    margin: 0 auto;
+    width: 40%;
+}

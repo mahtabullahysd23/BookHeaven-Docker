@@ -1,0 +1,43 @@
+.rating-single-product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.quantity-single-product{
+    p{
+        margin-bottom: 0.5rem;
+    }
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0;
+    gap: 2rem;
+    p{
+        font-weight: 500;
+    }
+}
+
+.btn-group-single-prouct{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    margin: 0.5rem 0;
+    padding-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.single-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    p{
+        font-size: 0.9rem;
+    }
+}

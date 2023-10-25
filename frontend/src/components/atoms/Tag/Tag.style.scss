@@ -1,0 +1,23 @@
+@import "../../../index.scss";
+.tag {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: $white-color;
+  text-align: center;
+  padding: 0 0.7rem;
+  width: max-content;
+  line-height: 1.2rem;
+  border-radius: 10px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.black {
+  background-color: $black-color;
+}
+
+.green{
+  background-color: $green-color;
+}

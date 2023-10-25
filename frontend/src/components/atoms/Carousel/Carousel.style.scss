@@ -1,0 +1,31 @@
+.carousel-container {
+  padding: 40px;
+  background: #ffffff;
+}
+
+.slick-slide img {
+  margin: auto;
+  border-radius: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(195, 195, 195);
+    font-size: 30px;
+    margin:-10px;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+}
+
+.home-container {
+  margin-top: 75px;
+}
+.slides{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+

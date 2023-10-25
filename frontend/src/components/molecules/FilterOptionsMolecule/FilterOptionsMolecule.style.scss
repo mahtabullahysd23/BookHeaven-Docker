@@ -1,0 +1,12 @@
+@import "../../../index.scss";
+.filter-block {
+  margin-top: 2rem;
+  background-color: $white-color;
+  padding: 2rem;
+  border-radius: 10px;
+
+  p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+}
