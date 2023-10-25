@@ -1,0 +1,27 @@
+@import '../../../index.scss';
+
+.pagination-btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0;
+    font-size: 0.9rem;
+    color: $white-color;
+    .active-page{
+        background-color: $green-color;
+        color: $white-color;
+    }
+    button{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        &:hover{
+            background-color: $green-color;
+            color: $white-color;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../../index.scss';
+.checkout-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.chekout-left-div{
+    flex: 2;
+    padding: 2rem;
+    min-width: 350px;
+}
+
+.checkout-right-div{
+    flex: 1;
+    padding: 2rem;
+    min-width: 350px;
+    
+}
+
+.checkout-items{
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pay-option{
+    border-bottom: 1px solid $gray-light-color;
+    padding-bottom: 1rem;
+}
+
+.policy{
+    font-size: 12px;
+    span{
+        text-decoration: underline;
+        cursor: pointer;
+        color: $green-color;
+    }
+}
+

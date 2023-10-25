@@ -1,0 +1,9 @@
+@import '../../../index.scss';
+.cart-item-checkout{
+    display:flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid $gray-light-color;
+}

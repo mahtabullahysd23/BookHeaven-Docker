@@ -1,0 +1,43 @@
+/* Side modal container */
+.side-modal {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hidden outside the screen */
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* Side modal open state */
+  .side-modal.open {
+    right: 0;
+  }
+  
+  /* Side modal content */
+  .side-modal-content {
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  /* Side modal close button */
+  .side-modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    outline: none;
+  }
+  
+  /* Side modal close button hover state */
+  .side-modal-close-button:hover {
+    color: #000;
+  }
+  

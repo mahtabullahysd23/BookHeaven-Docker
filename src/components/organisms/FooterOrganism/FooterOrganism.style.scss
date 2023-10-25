@@ -1,0 +1,22 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+}
+
+.address-div
+{
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-bottom{
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

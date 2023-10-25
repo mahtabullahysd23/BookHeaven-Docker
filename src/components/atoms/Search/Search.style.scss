@@ -1,0 +1,29 @@
+/* Search container */
+
+@import "../../../index.scss";
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+      
+    border-radius: 5px;
+    padding: 4px;
+    background-color: $white-color;
+  }
+  
+  /* Search icon */
+  .search-icon {
+    padding: 8px;
+    color: $green-color;
+  }
+  
+  /* Search input field */
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  

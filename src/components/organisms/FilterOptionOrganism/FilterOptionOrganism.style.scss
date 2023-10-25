@@ -1,0 +1,19 @@
+@import '../../../index.scss';
+.price-range {
+  margin-top: 2rem;
+  background-color: $white-color;
+    padding: 2rem;
+    border-radius: 10px;
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.availability {
+  margin-top: 2rem;
+  p {
+    margin-bottom: 1rem;
+  }
+}

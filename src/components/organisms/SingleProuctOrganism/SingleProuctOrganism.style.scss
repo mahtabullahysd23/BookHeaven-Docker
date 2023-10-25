@@ -1,0 +1,19 @@
+.single-product-modal-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 2rem;
+}
+.single-product-modal-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spmc-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

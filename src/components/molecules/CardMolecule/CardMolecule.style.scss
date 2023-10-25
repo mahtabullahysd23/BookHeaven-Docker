@@ -1,0 +1,99 @@
+@import "../../../index.scss";
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content; /* You can adjust the maximum width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-div {
+  text-align: center;
+  background-color: $white-color;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.header-card {
+  position: absolute;
+  top: 3%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-button {
+  background-color: $black-color;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: $white-color;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.icon-button-group {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  transform: translateY(-55%);
+  display: none;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.card:hover .icon-button-group {
+  display: block;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-55%) scale(0.1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-55%) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-55%) scale(1);
+  }
+}
+
+.rating-card-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stock-class {
+  font-size: 0.8rem;
+  color: $green-color;
+}
+
+.stock-class-red {
+  font-size: 0.8rem;
+  color: $danger-color;
+}
+
+.card-image-div {
+  height: 250px;
+  width: 275px;
+}

@@ -1,0 +1,58 @@
+@import "../../../index.scss";
+.p1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110px;
+    padding: 0 1rem;
+    background-color:$gray-dark-color;
+    h3{
+        margin-bottom: 0.3rem;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.p2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110px;
+    padding: 0 1rem;
+    background-color:$gray-light-color;
+    h3{
+        margin-bottom: 0.3rem;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+    .p-icon{
+        font-size: 35px;
+        font-weight: 300;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+    }
+    .p-numeric{
+        position: absolute;
+        font-size: 30px;
+        opacity: 0.05;
+        bottom:0;
+        right:0;
+        margin-right: 0.5rem;
+        h1{
+            margin:0;
+            padding:0;
+        }
+    }
+    .p-title{
+        width: 100%;
+        margin-left: 1rem;
+    }
