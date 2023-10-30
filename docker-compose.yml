@@ -21,7 +21,7 @@ services:
       - EMAIL_PASSWORD=edufbztgatkqhaao
       - PORT=8000
       - DATABASE_URL=mongodb://database:27017/bookstore
-      - JWT_KEY=JHsuYB12351SnmkKS@!#$#@
+      - JWT_KEY=My_secret_key8228
       - BASE_URL=http://35.181.200.114:8000/
     depends_on:
       - database
