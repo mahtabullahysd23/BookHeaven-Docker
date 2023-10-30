@@ -7,7 +7,7 @@ services:
     ports:
       - "5173:5173"
     environment:
-      - VITE_API_BASE_URL=http://localhost:8000/api
+      - VITE_API_BASE_URL=http://35.181.200.114:8000/api
     depends_on:
       - backend
 
@@ -22,7 +22,7 @@ services:
       - PORT=8000
       - DATABASE_URL=mongodb://database:27017/bookstore
       - JWT_KEY=JHsuYB12351SnmkKS@!#$#@
-      - BASE_URL=http://localhost:8000/
+      - BASE_URL=http://35.181.200.114:8000/
     depends_on:
       - database
 
