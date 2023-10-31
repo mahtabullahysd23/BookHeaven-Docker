@@ -14,7 +14,7 @@ const UserProfile = () => {
   const [image, setImage] = useState("");
   const [loading, setLoading] = useState(false);
   const [mainloading, setMainLoading] = useState(true);
-  const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+  const allowedExtensions = ["jpg", "jpeg", "png", "gif"];
   const {
     handleSubmit,
     control,
@@ -47,17 +47,18 @@ const UserProfile = () => {
 
   const handeChange = (e) => {
     const file = e.target.files[0];
-    const extension = file.name.split('.').pop();
+    const extension = file.name.split(".").pop();
     if (!allowedExtensions.includes(extension.toLowerCase())) {
-        toast.error('Only images are allowed(jpg,jpeg,png,gif)');
-        return;
+      toast.error("Only images are allowed(jpg,jpeg,png,gif)");
+      return;
     }
     const formData = new FormData();
     formData.append("file_to_upload", e.target.files[0]);
     customAxios
       .post("/files/upload-image", formData)
       .then((res) => {
-        setImage(res.data.data.filename);
+        const fileName = res.data.data.key.split("/").pop();
+        setImage(fileName);
       })
       .catch((err) => {
         console.log(err);
@@ -93,9 +94,12 @@ const UserProfile = () => {
               <h1 className="flex-center mb-1">Edit Profile</h1>
               <div class="round-image">
                 <img
-                  src={`${
-                    import.meta.env.VITE_API_BASE_URL
-                  }/files/get/${image}`}
+                  src={
+                    //sudo-venom-bucket.s3.eu-west-3.amazonaws.com/images/1698742485670_1698740357543_08.jpg
+                    `https://${import.meta.env.VITE_APP_AWS_BUCKET_NAME}.s3.${
+                      import.meta.env.VITE_APP_AWS_BUCKET_REGION
+                    }.amazonaws.com/images/${image}`
+                  }
                   alt="Your Image"
                 />
               </div>

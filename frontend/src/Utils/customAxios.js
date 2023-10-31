@@ -1,7 +1,9 @@
 import axios from "axios";
 const customAxios = axios.create({
   // baseURL: "https://bookheaven.onrender.com/api",
-  baseURL: "http://13.39.1.158:8000/api",
+  baseURL: `${
+    import.meta.env.VITE_API_BASE_URL
+  }`,
   timeout: 10000,
 });
 customAxios.interceptors.request.use(

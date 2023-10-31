@@ -1,6 +1,6 @@
 const express = require("express");
 const routes = express();
-const upload = require("../config/file");
+const {upload} = require("../config/file");
 const FileController = require("../controller/FileController");
 const {isValidUser} = require("../middleware/auth");
 
