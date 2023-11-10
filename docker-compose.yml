@@ -23,10 +23,6 @@ services:
       - DATABASE_URL=mongodb://database:27017/bookstore
       - JWT_KEY=My_secret_key8228
       - BASE_URL=http://13.39.1.158:8000/
-      - AWS_S3_BUCKET_NAME=sudo-venom-bucket
-      - AWS_S3_REGION=eu-west-3
-      - WS_SECRET_ACCESS_KEY=RlU3Ir4KrhzDK9A4taYoEf+HrdZTbrTB/HSpR/Kr
-      - AWS_ACCESS_KEY_ID=AKIARBUZNPTUIGFKOLTX
     depends_on:
       - database
 
